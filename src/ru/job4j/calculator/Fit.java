@@ -12,7 +12,7 @@ public class Fit {
     }
 
     public static void main(String[] args) {
-        short height = 170;
+        short height = 200;
         double man = manWeight(height);
         double woman = womanWeight(height);
         System.out.println("Man 170 is " + man);
