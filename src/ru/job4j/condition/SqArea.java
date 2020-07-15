@@ -1,7 +1,7 @@
 package ru.job4j.condition;
 
 public class SqArea {
-    public static double square(int perimeter, int k ){
+    public static double square(int perimeter, int k) {
         int height = perimeter / (2 * (k + 1));
         int length = height * k;
         double result = height * length;
