@@ -13,4 +13,18 @@ public class PrimeNumberTest {
         int expected = 3;
         assertThat(result, is(expected));
     }
+
+    @Test
+    public void when11() {
+        int result = PrimeNumber.primeNumberCounter(11);
+        int expected = 5;
+        assertThat(result, is(expected));
+    }
+
+    @Test
+    public void when2() {
+        int result = PrimeNumber.primeNumberCounter(2);
+        int expected = 1;
+        assertThat(result, is(expected));
+    }
 }
