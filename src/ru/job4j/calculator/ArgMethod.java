@@ -23,8 +23,6 @@ public class ArgMethod {
         System.out.println("Hello, " + name3);
     }
 
-
-
     public static void main(String[] args) {
         String name = "Petr Arsentev";
         int age = 33;
