@@ -30,4 +30,10 @@ public class CheckPrimeNumberTest {
         boolean result = CheckPrimeNumber.check(11);
         assertThat(result, is(true));
     }
+
+    @Test
+    public void when2ThenTrue() {
+        boolean result = CheckPrimeNumber.check(2);
+        assertThat(result, is(true));
+    }
 }
