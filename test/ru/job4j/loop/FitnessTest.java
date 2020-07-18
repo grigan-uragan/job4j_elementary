@@ -27,4 +27,11 @@ public class FitnessTest {
         int expected = 2;
         assertThat(result, is(expected));
     }
+
+    @Test
+    public void whenIvanEqualNikola() {
+        int result = Fitness.calc(90, 90);
+        int expected = 1;
+        assertThat(result, is(expected));
+    }
 }
