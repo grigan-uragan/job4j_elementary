@@ -8,8 +8,8 @@ public class Battery {
     }
 
     public void exchange(Battery another) {
-        this.load += another.load;
-        another.setLoad(0);
+        another.setLoad(another.getLoad() + this.getLoad());
+        this.setLoad(0);
     }
 
     public int getLoad() {
