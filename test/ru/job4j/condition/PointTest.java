@@ -7,25 +7,19 @@ public class PointTest {
 
     @Test
     public void whenPointEqualsThenResultZero() {
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 0;
-        int y2 = 0;
+        Point first = new Point(10, 10);
+        Point second = new Point(10, 10);
+        double result = first.distance(second);
         double expected = 0;
-        double out = Point.distance(x1, y1, x2, y2);
-
-        Assert.assertEquals(expected, out, 0.01);
+        Assert.assertEquals(result, expected, 0.01);
     }
 
     @Test
     public void whenPointDifferenceThenResultMoreThanZero() {
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 3;
-        int y2 = 3;
-        double expected = 4.24;
-        double out = Point.distance(x1, y1, x2, y2);
-
-        Assert.assertEquals(expected, out, 0.01);
+        Point first = new Point(0, 0);
+        Point second = new Point(10, 10);
+        double result = first.distance(second);
+        double expected = 14.14;
+        Assert.assertEquals(result, expected, 0.01);
     }
 }
