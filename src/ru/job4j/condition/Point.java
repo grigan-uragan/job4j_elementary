@@ -5,7 +5,6 @@ public class Point {
         int x = x2 - x1;
         int y = y2 - y1;
         double result = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
-
         return result;
     }
 

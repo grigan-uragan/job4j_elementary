@@ -10,5 +10,4 @@ public class MatrixSum {
         }
         return result;
     }
-
 }

@@ -3,6 +3,12 @@ package ru.job4j.array;
 import java.util.Arrays;
 
 public class AlgoArray {
+    public static void print(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+
     public static void main(String[] args) {
         int[] array = new int[] {5, 3, 2, 1, 4};
         int temp = array[0];
@@ -14,9 +20,6 @@ public class AlgoArray {
         temp = array[3];
         array[3] = array[4];
         array[4] = temp;
-
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
-        }
+        print(array);
     }
 }
