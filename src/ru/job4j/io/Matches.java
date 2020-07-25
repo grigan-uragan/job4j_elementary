@@ -1,5 +1,4 @@
 package ru.job4j.io;
-
 import java.util.Scanner;
 
 public class Matches {
@@ -8,18 +7,17 @@ public class Matches {
         Scanner scanner = new Scanner(System.in);
         int player = 1;
         while (true) {
-            System.out.println("Игрок номер " + player + "  возьмите от 1 до 3 спичек");
+            System.out.println(player + " игрок возьмете от 1 до 3 спичек");
             int take = Integer.parseInt(scanner.nextLine());
-            if (take >= 1 && take <= 3) {
-                start = start - take;
-            } else {
-                System.out.println("Будьте Внимательнее от 1 до 3 спичек");
+            if (take < 1 || take > 3) {
+                System.out.println("Попробуйте еще раз");
                 continue;
             }
+            start = start - take;
             if (start > 0) {
-                System.out.println("Спасибо! На столе осталось " + start);
+                System.out.println("На столе осталось " + start + " спичек");
             } else {
-                System.out.println("Поздравляю игрок номер " + player + ", Вы выиграли!");
+                System.out.println("Поздравляю " + player + " игрок вы выиграли");
                 break;
             }
             player = player == 1 ? 2 : 1;
