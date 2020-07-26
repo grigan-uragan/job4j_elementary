@@ -9,17 +9,16 @@ public class Matches {
         while (true) {
             System.out.println(player + " игрок возьмете от 1 до 3 спичек");
             int take = Integer.parseInt(scanner.nextLine());
-            if (take < 1 || take > 3) {
+            while (take < 1 || take > 3) {
                 System.out.println("Попробуйте еще раз");
-                continue;
+                take = Integer.parseInt(scanner.nextLine());
             }
             start = start - take;
-            if (start > 0) {
-                System.out.println("На столе осталось " + start + " спичек");
-            } else {
+            if (start <= 0) {
                 System.out.println("Поздравляю " + player + " игрок вы выиграли");
                 break;
             }
+            System.out.println("На столе осталось " + start + " спичек");
             player = player == 1 ? 2 : 1;
         }
     }
